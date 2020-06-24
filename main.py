@@ -36,7 +36,7 @@ import re
 #Question1
 def get_test_username():  
   name = input('Please enter your name: ')
-  print(name)
+  print('Hello ' + name + '!')
   # if name == name[::-1]:
   #   print(name, 'is a palindrome.')
   # else:
@@ -58,8 +58,8 @@ def get_phrase():
   #The next line wipes the punctuation from the string. This will strip the string
   cleaned_phrase = re.sub(r'[^A-Za-z]', '', word.lower())
 
-  print(cleaned_phrase)
-  print(word)
+  # print(cleaned_phrase)
+  # print(word)
   #This tests the stripped string by reversing the user input
   if cleaned_phrase == cleaned_phrase[::-1]:
     print(word, 'IS a palindrome.')
